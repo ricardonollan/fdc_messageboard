@@ -1,0 +1,113 @@
+.name-list {
+    border:1px solid #dee2e6;
+    border-radius: 10px;
+    min-height:600px;
+}
+
+.message-display {
+    border:1px solid #dee2e6;
+    border-radius: 10px;
+    position: relative;
+    padding:unset !important;
+}
+
+.name-list ul li {
+    list-style: none;
+    height: 30px;
+    cursor: pointer;
+    color:blue;
+}
+#contact_details {
+    height:50px;
+    background: skyblue;
+}
+#message_box {
+    resize: none;
+}
+.message_pic{
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+}
+.date_sent_text{
+    font-size:11px;
+}
+.delete_btn,  .delete_all_btn {
+    cursor: pointer;
+}
+#reply_btn {
+    float:right;
+}
+#message_area {
+    height:auto;
+    padding: 10px;
+    max-height: 320px;
+    overflow-y: auto;
+    overflow-x: hidden ;
+    min-height:100px;
+}
+#seemore_div {
+    position: relative;
+    bottom: 0px;
+    height: 40px;
+    text-align: center;
+}
+.contact_pic {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    align-self: center;
+}
+.seemore_btn {
+    width:100%;
+    cursor: pointer;
+}
+.message_content_div {
+    min-height: 350px;
+}
+.contact_information{
+    width:100%;
+}
+.action_div {
+    position: relative;
+    left: 30px;
+}
+#searchResults {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+}
+#searchResults ul {
+    list-style: none;
+    padding:0px;
+    margin:unset;
+}
+
+#searchResults ul li {
+    display:flex;
+}
+#searchResults ul li:hover {
+    background-color: skyblue;
+    color:white;
+}
+#searchResults ul li p {
+    margin:unset;
+    margin-left:20px;
+}
+/* #search_contact {
+    margin-left:10px;
+} */
+@media only screen and (max-width: 1000px) {
+    #seemore_div, .contact_message, .my_message {
+        width:100%;
+    }
+    .col-lg-10 {
+        width: 83.33333333%;
+    }
+  }

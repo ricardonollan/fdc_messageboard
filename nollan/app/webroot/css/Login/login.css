@@ -1,0 +1,54 @@
+.myform-area {
+  position: relative;
+  height: 100vh;
+  width: 500px;
+  margin: auto;
+}
+.form-area .form-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+
+}
+.login-form .form-content {
+  width:80%;
+} 
+.register-form .form-content {
+  width:100%;
+}
+
+.thankyou-content {
+  max-width:100%;
+  width:800px;
+}
+
+.thankyou-content .form-content {
+  width:100%;
+  padding:20px;
+}
+
+.myform-area form {
+  width:100% !important;
+}
+#flashMessage {
+  text-align: center;
+}
+.customized-alert .error-message {
+  background: transparent !important;
+  margin-bottom: unset !important;
+  color:red !important;
+  border: unset !important;
+  webkit-box-shadow: unset !important;
+  -moz-box-shadow: unset !important;
+  box-shadow: unset !important;
+}
+/* @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+} */

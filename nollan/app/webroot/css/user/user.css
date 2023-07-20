@@ -1,0 +1,52 @@
+.profile_img, .view_profile {
+    width: 400px;
+    border-radius: 50%;
+    height: 400px;
+}
+
+#view_profile_container {
+    max-width: 800px;
+}
+#edit_profile_container {
+    max-width: 600px;
+}
+
+.profile_img_div {
+    max-width:100%;
+}
+.edit_input {
+    min-width:250px;
+}
+#image-upload {
+    max-width:300px;
+}
+.update_btn {
+    width:200px;
+}
+
+#edit_form div{
+    margin-bottom: unset;
+}
+#header .menu_ul {
+    display: flex;
+    list-style: none;
+    float: right;
+    text-align: center;
+}
+
+#header ul li {
+    min-width:100px;
+}
+#header .home_link {
+    color:black;
+}
+#header ul li a {
+    text-decoration: none;
+}
+#header ul li:hover {
+   background-color: skyblue;
+   color:white !important;
+}
+#header ul li a:hover {
+    color:white !important;
+ }

@@ -136,21 +136,30 @@ class UsersController extends AppController
                         $targetDir = WWW_ROOT . 'img/';
                         $data['User']['profile_img'] = $data['User']['name'].date('y-m-d').'.'.pathinfo($this->request->data['User']['profile']['name'], PATHINFO_EXTENSION);
                         move_uploaded_file($this->request->data['User']['profile']['tmp_name'], $targetDir . $data['User']['profile_img']);
+                        $this->User->updateAll(
+                            array(
+                                'User.profile_img' => "'" . $data['User']['profile_img'] . "'",
+                                'User.hubby' => "'" . $data['User']['hubby'] . "'",
+                                'User.name' => "'" . $data['User']['name'] . "'",
+                                'User.email' => "'" . $data['User']['email'] . "'",
+                                'User.gender' => "'" . $data['User']['gender'] . "'",
+                                'User.birthdate' => "'" . date('Y-m-d', strtotime($data['User']['birthdate'])) . "'"
+                            ),
+                            array('User.id' => $this->Session->read('user_id'))
+                        );
                     } else {
                         $data['User']['profile_img'] = '';
+                        $this->User->updateAll(
+                            array(
+                                'User.hubby' => "'" . $data['User']['hubby'] . "'",
+                                'User.name' => "'" . $data['User']['name'] . "'",
+                                'User.email' => "'" . $data['User']['email'] . "'",
+                                'User.gender' => "'" . $data['User']['gender'] . "'",
+                                'User.birthdate' => "'" . date('Y-m-d', strtotime($data['User']['birthdate'])) . "'"
+                            ),
+                            array('User.id' => $this->Session->read('user_id'))
+                        );
                     }
-                    
-                    $this->User->updateAll(
-                        array(
-                            'User.profile_img' => "'" . $data['User']['profile_img'] . "'",
-                            'User.hubby' => "'" . $data['User']['hubby'] . "'",
-                            'User.name' => "'" . $data['User']['name'] . "'",
-                            'User.email' => "'" . $data['User']['email'] . "'",
-                            'User.gender' => "'" . $data['User']['gender'] . "'",
-                            'User.birthdate' => "'" . date('Y-m-d', strtotime($data['User']['birthdate'])) . "'"
-                        ),
-                        array('User.id' => $this->Session->read('user_id'))
-                    );
                     $this->Session->write('user_email', $data['User']['email']);
                     $this->Session->write('profile_pic', $data['User']['profile_img']);
                     $response['success'] = true;

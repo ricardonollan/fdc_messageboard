@@ -5,9 +5,9 @@
             <div class="row mt-5">
                 <div class="col-lg-6">
                 <?php if ($user['User']['profile_img'] != null) { ?>
-                            <img src="<?= FULL_BASE_URL . '/nollan/app/webroot/img/' . $user['User']['profile_img']; ?>" alt="Image" class="view_profile">
+                            <img src="<?= FULL_BASE_URL . '/fdc_messageboard/app/webroot/img/' . $user['User']['profile_img']; ?>" alt="Image" class="view_profile">
                         <?php } else { ?>
-                            <img src="<?= FULL_BASE_URL . '/nollan/app/webroot/img/thumbnail.png' ?>" alt="Image" class="view_profile">
+                            <img src="<?= FULL_BASE_URL . '/fdc_messageboard/app/webroot/img/thumbnail.png' ?>" alt="Image" class="view_profile">
                         <?php } ?>
                 </div>
                 <div class="col-lg-5 mt-5 ms-3">

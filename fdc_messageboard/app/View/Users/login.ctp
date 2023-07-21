@@ -20,7 +20,7 @@
                                         <button class="btn btn-success col-12" type="submit">Login</button>
                                     </div>
                                     <div class="col">
-                                        <a href="/nollan/users/register" class="btn btn-primary col-12">Register</a>
+                                        <a href="/fdc_messageboard/users/register" class="btn btn-primary col-12">Register</a>
                                     </div>
                                 </div>
                             </div>

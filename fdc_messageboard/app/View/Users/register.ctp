@@ -13,7 +13,7 @@
                             </div>
                         <?php endif; ?>
                     </section>
-                    <form action="/nollan/users/register" class="ps-5 pe-5" id="UserRegisterForm" method="post" accept-charset="utf-8">
+                    <form action="/fdc_messageboard/users/register" class="ps-5 pe-5" id="UserRegisterForm" method="post" accept-charset="utf-8">
                         <label for="name">Name</label>
                         <input name="data[User][name]" class="form-control" type="text" value="" id="name">
                         <label for="UserEmail">Email</label>

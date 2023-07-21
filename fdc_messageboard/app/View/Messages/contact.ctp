@@ -8,9 +8,9 @@
                         foreach ($messages as $key => $contact) { ?>
                             <li class="contact_name" data-id="<?= $contact['Users']['id']; ?>">
                                 <?php if ($contact['Users']['profile_img'] != null) { ?>
-                                    <img src="<?= FULL_BASE_URL . '/nollan/app/webroot/img/' . $contact['Users']['profile_img']; ?>" alt="Image" class="contact_pic">
+                                    <img src="<?= FULL_BASE_URL . '/fdc_messageboard/app/webroot/img/' . $contact['Users']['profile_img']; ?>" alt="Image" class="contact_pic">
                                 <?php } else { ?>
-                                    <img src="<?= FULL_BASE_URL . '/nollan/app/webroot/img/thumbnail.png' ?>" alt="Image" class="contact_pic">
+                                    <img src="<?= FULL_BASE_URL . '/fdc_messageboard/app/webroot/img/thumbnail.png' ?>" alt="Image" class="contact_pic">
                                 <?php } ?>
                                 <img src="" alt="">
                                 <b><?= $contact['Users']['name']; ?></b>

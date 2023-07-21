@@ -17,9 +17,9 @@
                 <div class="col-lg-12">
                     <div class="profile_img_div col-12 text-center" id="image-preview">
                         <?php if ($user['User']['profile_img'] != null) { ?>
-                            <img src="<?= FULL_BASE_URL . '/nollan/app/webroot/img/' . $user['User']['profile_img']; ?>" alt="Image" class="profile_img">
+                            <img src="<?= FULL_BASE_URL . '/fdc_messageboard/app/webroot/img/' . $user['User']['profile_img']; ?>" alt="Image" class="profile_img">
                         <?php } else { ?>
-                            <img src="<?= FULL_BASE_URL . '/nollan/app/webroot/img/thumbnail.png' ?>" alt="Image" class="profile_img">
+                            <img src="<?= FULL_BASE_URL . '/fdc_messageboard/app/webroot/img/thumbnail.png' ?>" alt="Image" class="profile_img">
                         <?php } ?>
 
                     </div>

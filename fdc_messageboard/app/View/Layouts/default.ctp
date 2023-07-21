@@ -49,15 +49,15 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<?php if (isset($_SESSION['logged_in'])) { ?>
 			<div id="header" class="text-end">
 				<ul class="menu_ul">
-					<li><a href="<?= FULL_BASE_URL.'/nollan/users/profile';?>" class="home_link">Home</a></li>
+					<li><a href="<?= FULL_BASE_URL.'/fdc_messageboard/users/profile';?>" class="home_link">Home</a></li>
 					<li>
 						<div class="dropdown">
 							<a class="dropdown-toggle user_name" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
 								<?= $_SESSION['user'] ?>
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-								<li><a class="dropdown_list" href="<?= FULL_BASE_URL.'/nollan/users/editProfile';?>">Edit Profile</a></li>
-								<li><a class="dropdown_list" href="<?= FULL_BASE_URL.'/nollan/messages/contact';?>">message</a></li>
+								<li><a class="dropdown_list" href="<?= FULL_BASE_URL.'/fdc_messageboard/users/editProfile';?>">Edit Profile</a></li>
+								<li><a class="dropdown_list" href="<?= FULL_BASE_URL.'/fdc_messageboard/messages/contact';?>">message</a></li>
 							</ul>
 						</div>
 					</li>
@@ -81,7 +81,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<!-- </?php echo $this->element('sql_dump'); ?> -->
 </body>
 <script>
-	const base_url = `<?= FULL_BASE_URL . '/nollan'; ?>`;
+	const base_url = `<?= FULL_BASE_URL . '/fdc_messageboard'; ?>`;
 </script>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>

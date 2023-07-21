@@ -313,7 +313,6 @@ $(document).ready(function () {
         let imageSrc = $(this).find('img.contact_pic').attr('src');
         let name =  $(this).find('p').text().trim();
 
-
         let info = `<img src="${imageSrc}" alt="Image" class="contact_pic ms-4 d-flex">
                     <h3 class="contact_full_name ms-2">${name}</h3>`;
         
